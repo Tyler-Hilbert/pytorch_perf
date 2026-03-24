@@ -15,7 +15,7 @@ async function sendText() {
     resultEl.textContent = "";
     errorEl.textContent = "";
     btn.disabled = true;
-    btn.textContent = "Sending...";
+    btn.textContent = "This may take a minute...";
 
     try {
         // Make request
