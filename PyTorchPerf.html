@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Connects to a Modal instance to run PyTorch performance -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PyTorch Performance on Modal</title>
+  <link rel="stylesheet" href="stylesheet.css"></style>
+</head>
+<body>
+  <h1>PyTorch Performance</h1>
+
+  <!-- inputs -->
+  <textarea id="model_code" placeholder="{PyTorch module with forward function here}"></textarea>
+  <input id="A" type="text" placeholder="A = torch.rand(4096, 4096)" />
+  <input id="B" type="text" placeholder="B = torch.rand(4096, 4096)" />
+
+  <!-- buttons and outputs -->
+  <button id="btn" onclick="sendText()">Run Perf</button>
+  <div id="result"></div>
+  <div id="error"></div>
+
+  <hr>
+
+  <!-- preset buttons -->
+  <h2>Examples</h2>
+  <div id="presets">
+    <button onclick="fillPreset('matmul')">Matrix multiply</button>
+    <button onclick="fillPreset('scalar')">Scalar multiply</button>
+    <button onclick="fillPreset('triu')">Upper triangle</button>
+  </div>
+
+  <!-- js -->
+  <script src="script.js"></script>
+</body>
+</html>
