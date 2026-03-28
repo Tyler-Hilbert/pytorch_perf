@@ -1,6 +1,6 @@
 // Makes a request to Modal using data on webpage, then updates webpage
 
-const MODAL_URL = "https://hilberttyler1--pytorch-perf-pytorch-perf-dev.modal.run";
+const MODAL_URL = "https://hilberttyler1--pytorch-perf-pytorch-perf.modal.run";
 
 async function sendText() {
     // Get elements
